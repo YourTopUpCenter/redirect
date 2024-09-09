@@ -3,108 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Facebook Page</title>
+    <title>Follow Us on Facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Site-wide styling */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
+            text-align: center;
+            padding: 50px;
         }
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .fb-page {
-            margin: 0 auto;
-            border: 1px solid #ddd;
+            background-color: #fff;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 700px;
+            margin: 0 auto;
         }
-        .fb-page:hover {
-            transform: scale(1.02);
-        }
+
         h1 {
-            color: #3b5998;
-            font-size: 2em;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
         }
+
         p {
-            font-size: 1.2em;
-            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
         }
-        .more-info {
-            background-color: #3b5998;
-            color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
+
+        .social-section {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social-section .info-box {
+            text-align: center;
+        }
+
+        .info-box i {
+            font-size: 40px;
+            color: #3b5998;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
             margin-top: 20px;
         }
-        .more-info:hover {
-            background-color: #2a4373;
-        }
-        .social-icons {
-            margin: 20px 0;
-        }
-        .social-icons a {
-            color: #3b5998;
-            font-size: 2em;
-            margin: 0 10px;
+
+        .buttons a {
             text-decoration: none;
-            transition: color 0.3s ease;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
         }
-        .social-icons a:hover {
-            color: #2a4373;
+
+        .follow-btn {
+            background-color: #3b5998;
         }
-        
-       .home{
-           width: 40%;
-           padding: 20px 40px;
-           background: #26ff00;
-           color: #000;
-           box-shadow: 0 0 30px #26ff00;
-           margin-top: 100px;
-           border-radius: 20px 0 20px 0;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           margin-left: 25%;
-       }
-a{
-    text-decoration: none;
-}
-    
+
+        .explore-btn {
+            background-color: #28a745;
+        }
+
+        .follow-btn:hover {
+            background-color: #2d4373;
+        }
+
+        .explore-btn:hover {
+            background-color: #218838;
+        }
+
+        .countdown {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ff0000;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Follow Us on Facebook</h1>
-        <p>Visit our Facebook Page for the latest updates and information!</p>
+        <h1>Connect with Our Secondary Facebook Page</h1>
+        <p>We share exclusive updates, promotions, and latest news on our secondary Facebook page. Follow us to stay in touch!</p>
         
-        <!-- Facebook Page Plugin -->
-        <div class="fb-page" data-href="https://www.facebook.com/yourtopupcenterofficialnews" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/yourtopupcenterofficial" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/yourtopupcenterofficialnews">FF Diamond Store BD - NEWS</a>
-            </blockquote>
+        <!-- Facebook Page Info -->
+        <div class="social-section">
+            <div class="info-box">
+                <i class="fas fa-users"></i>
+                <h2>1K+ Followers</h2>
+                <p>Join a community of like-minded people who stay updated with the latest from us.</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-bullhorn"></i>
+                <h2>Latest Updates</h2>
+                <p>Be the first to know about our special offers, services, and announcements.</p>
+            </div>
         </div>
-        
-        <p><a href="https://www.facebook.com/yourtopupcenterofficialnews" target="_blank" class="more-info">Follow us on Facebook</a></p>
-        
-        <div class="social-icons">
-            <a href="https://www.facebook.com/yourtopupcenterofficialnews" target="_blank">Facebook</a>
-            <!-- Add other social icons if needed -->
+
+        <!-- Action Buttons -->
+        <div class="buttons">
+            <a href="https://facebook.com/yourtopupcenterofficialnews" class="follow-btn" target="_blank">
+                <i class="fas fa-thumbs-up"></i> Follow Our Secondary Page
+            </a>
+            <a href="https://yourtopupcenter.github.io" class="explore-btn" target="_blank">
+                <i class="fas fa-store"></i> Explore Your TopUp Center
+            </a>
         </div>
-        
-        <!-- Facebook SDK for JavaScript -->
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" ></script>
+
+        <!-- Countdown Timer -->
+        <div class="countdown">
+            You Will Be Redirected to Our Secondary Facebook Page in <span id="countdown">10</span> seconds...
+        </div>
     </div>
-    
-    <a href="https://yourtopupcenter.github.io/home"><section class="home">
-        Explore Your TopUp Center 
-    </section></a>
+
+    <script>
+        // Countdown timer
+        var timeLeft = 10;
+        var countdownElement = document.getElementById('countdown');
+        
+        var countdownTimer = setInterval(function() {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdownTimer);
+                window.location.href = "https://facebook.com/yourtopupcenterofficialnews";
+            }
+        }, 1000);
+    </script>
+
 </body>
-</html>
+            </html>
