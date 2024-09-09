@@ -1,1 +1,106 @@
-creating
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Facebook Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .fb-page {
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .fb-page:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            color: #3b5998;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .more-info {
+            background-color: #3b5998;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .more-info:hover {
+            background-color: #2a4373;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            color: #3b5998;
+            font-size: 2em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #2a4373;
+        }
+        
+       .home{
+           width: 40%;
+           padding: 20px 40px;
+           background: #26ff00;
+           color: #000;
+           box-shadow: 0 0 30px #26ff00;
+           margin-top: 100px;
+           border-radius: 20px 0 20px 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-left: 25%;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Follow Us on Facebook</h1>
+        <p>Visit our Facebook Page for the latest updates and information!</p>
+        
+        <!-- Facebook Page Plugin -->
+        <div class="fb-page" data-href="https://www.facebook.com/yourtopupcenterofficialnews" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/yourtopupcenterofficial" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/yourtopupcenterofficialnews">FF Diamond Store BD - NEWS</a>
+            </blockquote>
+        </div>
+        
+        <p><a href="https://www.facebook.com/yourtopupcenterofficialnews" target="_blank" class="more-info">Follow us on Facebook</a></p>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourtopupcenterofficialnews" target="_blank">Facebook</a>
+            <!-- Add other social icons if needed -->
+        </div>
+        
+        <!-- Facebook SDK for JavaScript -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="A4sJkt1K"></script>
+    </div>
+    
+    <a href="https://yourtopupcenter.github.io/home"><section class="home">
+        Explore Your TopUp Center 
+    </section></a>
+</body>
+</html>
