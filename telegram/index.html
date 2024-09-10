@@ -1,1 +1,158 @@
-creating......
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribe Our Telegram Channel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Site-wide styling */
+        
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+        }
+        body{
+    margin: 0 auto;
+    
+    background-color: #141414;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.05) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: animateBackground 10s linear infinite;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+    100% {
+        background-position: 50px 50px, 50px 50px;
+    }
+}
+        
+       .head{
+           margin: 40px 5% 0 5%;
+           display: flex;
+           justify-content: center;
+           
+         
+       
+       }
+       
+      .head i{
+          
+          font-size: 80px;
+          color: #00c0ff;
+          text-shadow: 0 0 30px #00c0ff;
+      
+          
+      }
+      
+     .info p{
+         color: #fff;
+         text-shadow: 0 0 3px #fff;
+         text-align: center;
+         font-size: 20px;
+         margin-top: 30px;
+         margin-left: 5%;
+         margin-right: 5%;
+     }
+     
+     
+     #in{
+         color: #26ff00;
+         text-shadow: 0 0 30px #26ff00;
+         text-align: left;
+         margin-top: 0;
+         margin-left: 5%;
+        
+     }
+     
+    .butt{
+        display: flex;
+        justify-content: center;
+    }
+     
+   .butt button{
+      
+       color: #000;
+       background: #00c0ff;
+       border: none;
+       border-radius: 0 10px 0 10px;
+       padding: 10px 20px 10px 20px;
+       margin-top: 40px;
+       font-size: 20px;
+       box-shadow: 0 0 30px #00c0ff;
+       margin-bottom: 30px;
+   }
+   
+  .countdown{
+      margin: 0 5% 0 5%;
+      font-size: 18px;
+      color: #00eaff;
+      text-align: center;
+      
+  }
+  
+ .countdown span{
+     margin: 0 10px 0 10px;
+     color: #00eaff;
+     text-shadow: 0 0 10px #00eaff;
+ }
+ 
+.info-box{
+    
+    margin: 50px 10% 0 10%;
+   
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="head">
+        <i class="fab fa-telegram"></i>
+    </div>
+    <div class="info">
+       
+        <p>Stay connected with us for exclusive updates, offers, and the latest news on our Telegram Channel. Suscribe us to stay in touch !</p><br><br>
+        
+        <p id="in">Name : <strong>Your TopUp Center </strong></p>
+        <p id="in">Subscribers : <strong>10+</strong></p>
+        <p id="in">Purpose : <strong>Official Telegram Channel</strong></p>
+    </div>
+    
+    <div class="butt">
+        <a href="https://t.me/yourtopupcenter" target="_blank"> <button>Subscribe Now</button></a>
+    </div>
+
+
+ <div class="countdown">
+            You Will Be Redirected to Our Telegram Channel in <span id="countdown">10</span> seconds...
+        </div>
+        
+        
+   
+    <script>
+        // Countdown timer
+        var timeLeft = 10;
+        var countdownElement = document.getElementById('countdown');
+        
+        var countdownTimer = setInterval(function() {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdownTimer);
+                window.location.href = "https://t.me/yourtopupcenter";
+                            }
+        }, 1000);
+    </script>
+
+</body>
+  </html>
